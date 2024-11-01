@@ -1,0 +1,67 @@
+<p>This is a profile page.</p>
+<p>profile works!</p>
+
+<h2>Multi-Step Form Wizard</h2>
+
+<div class="progress-bar">
+  <div class="progress" [style.width]="(currentStep / 3) * 100 + '%'"></div>
+</div>
+
+<!-- Step 1: Profile Setup -->
+<div *ngIf="currentStep === 1">
+  <h3>Step 1: Profile Setup</h3>
+  <form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="name" name="name" placeholder="Enter your name" required />
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="email" name="email" placeholder="Enter your email" required />
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" [(ngModel)]="phone" name="phone" placeholder="Enter your phone number" required />
+    </div>
+    <button class="btn" (click)="nextStep()">Next</button>
+  </form>
+</div>
+
+<!-- Step 2: Preferences -->
+<div *ngIf="currentStep === 2">
+  <h3>Step 2: Preferences</h3>
+  <form>
+    <div class="form-group">
+      <label for="language">Preferred Language:</label>
+      <select id="language" [(ngModel)]="language" name="language" required>
+        <option value="">Select your language</option>
+        <option value="english">English</option>
+        <option value="spanish">Spanish</option>
+        <option value="french">French</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="notifications">Receive Notifications:</label>
+      <input type="checkbox" id="notifications" [(ngModel)]="notifications" name="notifications" />
+      <label for="notifications">Yes, please</label>
+    </div>
+    <button class="btn" (click)="previousStep()">Back</button>
+    <button class="btn" (click)="nextStep()">Next</button>
+  </form>
+</div>
+
+<!-- Step 3: Confirmation -->
+<div *ngIf="currentStep === 3">
+  <h3>Step 3: Confirmation</h3>
+  <p>Review and confirm your information:</p>
+  <ul>
+    <li>Name: <strong>{{ name }}</strong></li>
+    <li>Email: <strong>{{ email }}</strong></li>
+    <li>Phone: <strong>{{ phone }}</strong></li>
+    <li>Preferred Language: <strong>{{ language }}</strong></li>
+    <li>Receive Notifications: <strong>{{ notifications ? 'Yes' : 'No' }}</strong></li>
+  </ul>
+  <button class="btn" (click)="previousStep()">Back</button>
+  <button class="btn" (click)="submit()">Submit</button>
+</div>
+

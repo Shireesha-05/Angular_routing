@@ -1,0 +1,11 @@
+src/styles.css
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:rgb(160, 137, 108)
+  }
+  
+html, body { height: 100%; }
+body { margin-left: 0px; font-family: Roboto, "Helvetica Neue", sans-serif;
+align-items: center; 
+text-align: center;}

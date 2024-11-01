@@ -1,0 +1,70 @@
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" routerLink="/" title="Home">MyApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/" title="Home" routerLinkActive="active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/about" title="About" routerLinkActive="active">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/contact" title="Contact" routerLinkActive="active">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/dashboard" title="Dashboard" routerLinkActive="active">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/services/1" title="Services" routerLinkActive="active">Service</a>
+            </li>
+           
+          </ul>
+        </div>
+      </nav>
+    </div>
+  
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="row" style="width: 100%;">
+    <div class="col-md-2000px"> <!-- Changed to col-md-12 for full width -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light" style="margin-right: 160px;">
+        <a class="navbar-brand" routerLink="/" title="Home">MyApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav"> <!-- Removed flex-column -->
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/" title="Home" routerLinkActive="active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/about" title="About" routerLinkActive="active">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/contact" title="Contact" routerLinkActive="active">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/dashboard" title="Dashboard" routerLinkActive="active">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/services/1" title="Services" routerLinkActive="active">Service</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<br><br><br>
+
+
+<app-breadcrumb></app-breadcrumb>
+<router-outlet></router-outlet>

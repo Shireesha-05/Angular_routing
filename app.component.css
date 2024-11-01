@@ -1,0 +1,33 @@
+/* Custom styles for the navbar */
+.navbar {
+   margin-left: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Increase the font size of the brand */
+    font-weight: bold; /* Make the brand text bold */
+    margin-right: 35px;
+}
+
+.nav-link {
+    padding: 10px 15px; /* Add padding to the links */
+    font-size: 1rem; /* Set a base font size for the links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.nav-item.active .nav-link {
+    background-color: rgba(0, 123, 255, 0.438); /* Highlight active link */
+    border-radius: 5px; /* Rounded corners for active link */
+}
+
+@media (max-width: 1234595px) {
+    .navbar {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}

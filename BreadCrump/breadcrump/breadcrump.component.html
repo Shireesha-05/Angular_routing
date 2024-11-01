@@ -1,0 +1,10 @@
+<nav>
+    <ng-container *ngFor="let breadcrumbs of breadcrumb; let last = last">
+      <ng-container *ngIf="!last">
+        <a [routerLink]="breadcrumbs.url">{{ breadcrumbs.label }}</a> &gt; 
+      </ng-container>
+      <ng-container *ngIf="last">
+        <strong>{{ breadcrumbs.label }}</strong>
+      </ng-container>
+    </ng-container>
+  </nav>

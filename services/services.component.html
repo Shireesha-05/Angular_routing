@@ -1,0 +1,28 @@
+<!-- <div class="service-container">
+    <h2>Service Details</h2>
+    <ng-container *ngIf="service">
+      <p>Service ID: {{ service.id }}</p>
+      <div class="service-info">
+        <p><strong>Service Name:</strong> {{ service.name }}</p>
+        <p><strong>Service Description:</strong> {{ service.description }}</p>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="service">
+      <p>No service found.</p>
+    </ng-container>
+
+<br>
+<br>
+    <button (click)="getServiceDetails()">Get Service Details</button>
+  </div> -->
+
+  <button (click)="getServiceDetails()">Get Service Details</button>
+<br>
+<br>
+  <div *ngIf="details">
+    <h2>Service Details</h2>
+    <p>Service ID: {{ details.id }}</p>
+    <p>Service Name: {{ details.name }}</p>
+    <p>Service Description: {{ details.description }}</p>
+  </div>
+

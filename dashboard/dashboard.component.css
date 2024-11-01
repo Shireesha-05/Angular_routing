@@ -1,0 +1,40 @@
+/* dashboard.component.css */
+
+div {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+  }
+  
+  li {
+    display: inline; /* Display list items inline */
+    margin-right: 15px; /* Space between links */
+  }
+  
+  a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  a:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .active {
+    font-weight: bold; /* Make active link bold */
+    color: #dc3545; /* Change color of active link */
+  }
